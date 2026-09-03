@@ -1,0 +1,62 @@
+{
+  "name": "widget-boilerplate",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js",
+    "./hooks/*": "./dist/hooks/*.js"
+  },
+  "scripts": {
+    "storybook": "storybook dev -p 6006",
+    "lint": "eslint src stories",
+    "lint:fix": "eslint src stories --fix",
+    "format": "prettier --write src stories",
+    "format:check": "prettier --check src stories",
+    "build-storybook": "storybook build",
+    "build": "rm -rf dist && vite build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "publish": "npm publish"
+  },
+  "engines": {
+    "node": ">=24.14.0",
+    "npm": ">=11.9.0"
+  },
+  "author": "Harlene Jaramillos",
+  "license": "ISC",
+  "files": [
+    "/dist"
+  ],
+  "description": "User Login",
+  "keywords": [
+    "web",
+    "widget",
+    "login"
+  ],
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@eslint-react/eslint-plugin": "^5.7.1",
+    "@eslint/js": "^10.0.1",
+    "@storybook/addon-links": "^10.3.6",
+    "@storybook/react-vite": "^10.3.6",
+    "@types/node": "^25.6.0",
+    "@types/react": "^19.2.14",
+    "@vitejs/plugin-react": "^6.0.1",
+    "eslint": "^10.3.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "prettier": "^3.8.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "storybook": "^10.3.6",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.59.1",
+    "vite": "^8.0.10",
+    "vite-plugin-dts": "^5.0.0"
+  }
+}
