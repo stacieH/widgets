@@ -1,7 +1,7 @@
 import EyeOffIcon from "../Icons/EyeOffIcon";
 import EyeIcon from "../Icons/EyeIcon";
 import useLogin from "../../hooks/useLogin";
-import "./login.css";
+import "./Login.css";
 import type { LoginProps } from "../../types/login-component";
 
 const Login = ({
