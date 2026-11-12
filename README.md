@@ -1,4 +1,4 @@
-# login-widget
+# sh-login-widget
 
 A customizable React login component with built-in validation, dark theme, icon slots, social login buttons, and password visibility toggle.
 
@@ -10,13 +10,13 @@ A customizable React login component with built-in validation, dark theme, icon 
 ## Installation
 
 ```bash
-npm install login-widget
+npm install sh-login-widget
 ```
 
 ## Usage
 
 ```tsx
-import { Login } from "login-widget";
+import { Login } from "sh-login-widget";
 
 export default function App() {
   return (
@@ -173,7 +173,7 @@ Inline style overrides for individual elements.
 ## Full example
 
 ```tsx
-import { Login } from "login-widget";
+import { Login } from "sh-login-widget";
 import { EmailIcon, LockIcon, GoogleIcon } from "./icons";
 
 export default function LoginPage() {
@@ -218,6 +218,10 @@ npm run lint:fix
 # Format
 npm run format
 npm run format:check
+
+# Publish
+npm publish
+npm dist-tag add login-widget@1.0.2 latest
 ```
 
 ## License
